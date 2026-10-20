@@ -1,0 +1,12 @@
+{
+  "name": "Mohammad Nashath | Frontend Developer",
+  "short_name": "Nashath.dev",
+  "description": "Frontend Developer portfolio — fast, accessible web interfaces.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080810",
+  "theme_color": "#6366F1",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,91 @@
+/* ==========================================================================
+   DESIGN TOKENS — variables.css
+   Edit this file to change the entire look of the portfolio.
+   ========================================================================== */
+
+:root {
+  /* --- Dark Theme (Default) --- */
+  --bg:           #080810;
+  --bg-surface:   #0F0F1A;
+  --bg-elevated:  #161625;
+  --bg-card:      #13131F;
+  --border:       rgba(255, 255, 255, 0.07);
+  --border-strong:rgba(255, 255, 255, 0.12);
+
+  --text:         #EEF0FF;
+  --text-muted:   #94A3B8;
+  --text-faint:   #4A5568;
+
+  /* Accent: Electric Indigo */
+  --accent:       #6366F1;
+  --accent-light: #818CF8;
+  --accent-glow:  rgba(99, 102, 241, 0.18);
+  --accent-subtle:rgba(99, 102, 241, 0.08);
+
+  /* Status */
+  --green:        #22C55E;
+  --green-glow:   rgba(34, 197, 94, 0.15);
+
+  /* Typography */
+  --font-head:    'Space Grotesk', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  /* Spacing scale */
+  --space-xs:  0.25rem;
+  --space-sm:  0.5rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 5rem;
+
+  /* Radii */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  18px;
+  --radius-xl:  24px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md:  0 4px 20px rgba(0,0,0,0.5);
+  --shadow-lg:  0 10px 40px rgba(0,0,0,0.6);
+  --shadow-accent: 0 0 40px rgba(99,102,241,0.15);
+
+  /* Transitions */
+  --ease:       cubic-bezier(0.22, 1, 0.36, 1);
+  --duration:   280ms;
+  --duration-fast: 150ms;
+
+  /* Layout */
+  --max-width:  1200px;
+  --nav-height: 64px;
+}
+
+/* --- Light Theme --- */
+[data-theme="light"] {
+  --bg:           #F5F6FF;
+  --bg-surface:   #FFFFFF;
+  --bg-elevated:  #ECEEFF;
+  --bg-card:      #FFFFFF;
+  --border:       rgba(0, 0, 0, 0.07);
+  --border-strong:rgba(0, 0, 0, 0.12);
+
+  --text:         #0D0D1A;
+  --text-muted:   #52525B;
+  --text-faint:   #A1A1AA;
+
+  --accent:       #4F46E5;
+  --accent-light: #6366F1;
+  --accent-glow:  rgba(79, 70, 229, 0.12);
+  --accent-subtle:rgba(79, 70, 229, 0.06);
+
+  --green:        #16A34A;
+  --green-glow:   rgba(22, 163, 74, 0.10);
+
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md:  0 4px 20px rgba(0,0,0,0.10);
+  --shadow-lg:  0 10px 40px rgba(0,0,0,0.14);
+  --shadow-accent: 0 0 40px rgba(79,70,229,0.10);
+}

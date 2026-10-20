@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);})();</script>
+  <title>404 — Page Not Found | Mohammad Nashath</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700;800&family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <style>
+    .error-page {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      gap: 1rem;
+    }
+    .error-code {
+      font-family: var(--font-mono);
+      font-size: clamp(5rem, 18vw, 10rem);
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+      opacity: 0.18;
+    }
+    .error-title {
+      font-family: var(--font-head);
+      font-size: clamp(1.4rem, 4vw, 2rem);
+      margin-top: -1rem;
+    }
+    .error-snippet {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.5rem;
+      color: var(--text-muted);
+      margin: 0.5rem 0 1.5rem;
+      text-align: left;
+    }
+    .error-snippet .kw  { color: #818CF8; }
+    .error-snippet .str { color: #34D399; }
+    .error-snippet .fn  { color: #F59E0B; }
+  </style>
+</head>
+<body class="theme-ready">
+  <div class="error-page">
+    <div class="error-code" aria-hidden="true">404</div>
+    <h1 class="error-title">Page not found</h1>
+
+    <pre class="error-snippet" role="img" aria-label="Humorous code snippet"><code><span class="kw">function</span> <span class="fn">findPage</span>(url) {
+  <span class="kw">throw new</span> Error(<span class="str">"PageNotFoundError"</span>);
+  <span class="kw">return</span> null; <span style="color:var(--text-faint)">// unreachable</span>
+}
+
+<span class="fn">findPage</span>(<span class="str">"${location.pathname}"</span>);
+<span style="color:var(--text-faint)">// → return home() instead</span></code></pre>
+
+    <a href="index.html" class="btn btn-primary">return home()</a>
+    <p style="font-size:0.82rem;color:var(--text-faint)">Or check your URL for typos.</p>
+  </div>
+
+  <script>
+    // Replace the path placeholder in the code snippet
+    document.querySelector('code').innerHTML =
+      document.querySelector('code').innerHTML
+        .replace('${location.pathname}', location.pathname);
+  </script>
+</body>
+</html>

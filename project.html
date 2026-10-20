@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);})();</script>
+  <title>Project | Mohammad Nashath</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/sections.css">
+  <link rel="stylesheet" href="/css/project-page.css">
+  <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div id="toast" aria-live="polite" aria-atomic="true"></div>
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" role="dialog" aria-label="Image lightbox" aria-modal="true">
+    <button id="lb-close" aria-label="Close lightbox">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="lb-img-wrap">
+      <img id="lb-img" src="" alt="Enlarged project screenshot">
+    </div>
+  </div>
+
+  <div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Site navigation" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#journey">Journey</a>
+      <a href="index.html#testimonials">Testimonials</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="https://github.com/Nashath53" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/nashath" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:mhdnashath53@gmail.com">Email</a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header id="navbar" role="banner">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Back to portfolio">
+        <span class="bracket">&lt;</span>MN<span class="slash">/</span><span class="bracket">&gt;</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#journey">Journey</a>
+        <a href="index.html#testimonials">Testimonials</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle btn-icon" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="project-main">
+      <!-- Rendered by project-page.js -->
+      <div style="min-height:80vh;display:grid;place-items:center">
+        <p style="color:var(--text-faint);font-family:var(--font-mono)">Loading…</p>
+      </div>
+    </div>
+  </main>
+
+  <footer role="contentinfo" style="border-top:1px solid var(--border);padding:1.5rem 0;background:var(--bg-surface)">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+      <div style="display:flex;align-items:center;gap:1.5rem">
+        <a href="index.html" class="nav-logo" style="font-size:0.9rem">
+          <span class="bracket">&lt;</span>MN<span class="slash">/</span><span class="bracket">&gt;</span>
+        </a>
+        <p style="font-size:0.78rem;color:var(--text-faint)">&copy; <span id="footer-year"></span> Mohammad Nashath</p>
+      </div>
+      <div style="display:flex;align-items:center;gap:1rem;font-size:0.8rem">
+        <a href="https://github.com/Nashath53" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/nashath" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:mhdnashath53@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script type="module">
+    import { initTheme }       from '/js/theme.js';
+    import { initNav }         from '/js/nav.js';
+    import { initProjectPage } from '/js/project-page.js';
+    import { initReveal }      from '/js/reveal.js';
+    import { initSpotlight }   from '/js/spotlight.js';
+    import { initCursor }      from '/js/cursor.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.classList.add('theme-ready');
+      initTheme();
+      initNav();
+      initProjectPage();
+      initReveal();
+      initSpotlight();
+      initCursor();
+      document.body.classList.add('loaded');
+    });
+  </script>
+</body>
+</html>
