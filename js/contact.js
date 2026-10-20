@@ -1,25 +1,10 @@
 /**
- * contact.js — Copy email, form validation and submission.
+ * contact.js — Form validation and submission.
  */
-import { site } from './data/site.js';
 import { showToast } from './utils.js';
 
 export function initContact() {
-  initCopyEmail();
   initForm();
-}
-
-function initCopyEmail() {
-  document.querySelectorAll('.email-copy-btn').forEach(btn => {
-    btn.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(site.email);
-        showToast('Email copied to clipboard!');
-      } catch {
-        showToast(`Email: ${site.email}`);
-      }
-    });
-  });
 }
 
 function initForm() {

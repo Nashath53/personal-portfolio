@@ -44,6 +44,7 @@
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
 
   <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap-utilities.min.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
@@ -147,7 +148,7 @@
         </button>
 
         <a href="/assets/cv/nashath-frontend-cv.pdf" download
-           class="btn btn-outline btn-sm"
+           class="btn btn-outline btn-sm d-none d-lg-inline-flex"
            aria-label="Download CV PDF">Resume ↓</a>
 
         <button class="hamburger" aria-label="Open navigation menu"
@@ -354,9 +355,10 @@
           <div class="reveal">
             <div class="profile-card card-spotlight">
               <div class="profile-img-wrap">
-                <img src="/assets/images/profile.webp"
+                <img src="assets/images/profile.webp"
                      alt="Mohammad Nashath, Frontend Developer"
                      width="400" height="500"
+                     class="w-100"
                      loading="lazy"
                      onerror="this.style.display='none';this.nextElementSibling.classList.add('visible')">
                 <div class="profile-fallback" aria-hidden="true">MN</div>
@@ -468,11 +470,7 @@
               my inbox is open.
             </p>
 
-            <button class="email-copy-btn" aria-label="Copy mhdnashath53@gmail.com to clipboard" title="Copy email address">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </button>
-
-            <div class="hero-social" style="margin-top:1.5rem" aria-label="Social links">
+            <div class="hero-social" aria-label="Social links">
               <a href="https://github.com/Nashath53" target="_blank" rel="noopener"
                  class="social-link" aria-label="GitHub Profile" title="GitHub">
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -542,7 +540,7 @@
        FOOTER
   ══════════════════════════════════════════════ -->
   <footer role="contentinfo">
-    <div class="container footer-inner">
+    <div class="container footer-inner d-flex flex-column flex-xl-row align-items-center justify-content-center justify-content-xl-between text-center text-xl-start gap-4">
       <div>
         <a href="#" class="nav-logo" style="font-size:0.88rem" aria-label="Back to top">
           <span class="bracket">&lt;</span>MN<span class="slash">/</span><span class="bracket">&gt;</span>
@@ -553,7 +551,7 @@
         </p>
       </div>
 
-      <nav class="footer-links" aria-label="Footer navigation">
+      <nav class="footer-links flex-wrap justify-content-center justify-content-xl-end gap-3 gap-lg-4" aria-label="Footer navigation">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
